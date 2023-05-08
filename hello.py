@@ -28,9 +28,7 @@ custom_proxy_group=♻️ 自动选择`url-test`.*`http://www.gstatic.com/genera
 enable_rule_generator=true
 overwrite_original_rules=true"""
 
-    text = text.split('\n')
-
-    return render_template('nodnsleak.ini', text=text)
+    return text
 
 if __name__ == '__main__':
     server = pywsgi.WSGIServer(('0.0.0.0', 5000), app)
