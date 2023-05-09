@@ -6,7 +6,8 @@ app = Flask(__name__)
 # two decorators, same function
 @app.route('/clash-rules/nodnsleak.ini')
 def index():
-    text = """[custom]
+    text = """<pre style="word-wrap: break-word; white-space: pre-wrap;">
+[custom]
 ;解决DNS泄露，无分流群组
 ruleset=🚀 节点选择,[]DOMAIN-SUFFIX,xn--ngstr-lra8j.com
 ruleset=🚀 节点选择,[]DOMAIN-SUFFIX,services.googleapis.cn
@@ -26,7 +27,7 @@ custom_proxy_group=🚀 节点选择`select`[]♻️ 自动选择`[]DIRECT`.*
 custom_proxy_group=♻️ 自动选择`url-test`.*`http://www.gstatic.com/generate_204`300,,50
 
 enable_rule_generator=true
-overwrite_original_rules=true"""
+overwrite_original_rules=true</pre>"""
 
     return text
 
