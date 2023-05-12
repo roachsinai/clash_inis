@@ -9,6 +9,8 @@ def index():
     text = """<pre style="word-wrap: break-word; white-space: pre-wrap;">
 [custom]
 ;解决DNS泄露，无分流群组
+ruleset=🚀 节点选择,[]DOMAIN-SUFFIX,leetcode.cn
+ruleset=🚀 节点选择,[]DOMAIN-SUFFIX,leetcode.com
 ruleset=🚀 节点选择,[]DOMAIN-SUFFIX,xn--ngstr-lra8j.com
 ruleset=🚀 节点选择,[]DOMAIN-SUFFIX,services.googleapis.cn
 ruleset=🚀 节点选择,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/GoogleCNProxyIP.list
@@ -20,6 +22,7 @@ ruleset=REJECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ba
 ruleset=REJECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list
 ruleset=DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list
 ruleset=DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaIp.list
+ruleset=🚀 节点选择,[]DOMAIN-SUFFIX,bing.com
 ruleset=DIRECT,[]GEOIP,CN,no-resolve
 ruleset=🚀 节点选择,[]FINAL
 
